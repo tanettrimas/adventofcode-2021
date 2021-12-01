@@ -1,0 +1,1 @@
+/Users/tanettrimas/dev/julekalendere/adventofcode/build/classes/kotlin/main/Day1.class
