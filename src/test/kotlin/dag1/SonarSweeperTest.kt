@@ -7,7 +7,7 @@ import java.io.File
 internal class SonarSweeperTest {
 
     @Test
-    internal fun getDepthMeasurementHappyPath() {
+    fun getDepthMeasurementHappyPath() {
         val measurements = listOf(
             199,
             200,
@@ -24,7 +24,7 @@ internal class SonarSweeperTest {
     }
 
     @Test
-    internal fun getDepthMeasurementFromTestfile() {
+    fun getDepthMeasurementFromTestfile() {
         val depthMeasurement = SonarSweeper().getDepthMeasurement(getMeasurementsFromFile())
         assertEquals(1713, depthMeasurement)
     }
@@ -36,7 +36,7 @@ internal class SonarSweeperTest {
     }
 
     @Test
-    internal fun getDepthMeasurementWindowedHappyPath() {
+    fun getDepthMeasurementWindowedHappyPath() {
         val measurements = listOf(
             199,
             200,
@@ -54,7 +54,7 @@ internal class SonarSweeperTest {
     }
 
     @Test
-    internal fun getDepthMeasurementWindowedFromTestFile() {
+    fun getDepthMeasurementWindowedFromTestFile() {
         val depthMeasurement = SonarSweeper().getDepthMeasurementWindowed(getMeasurementsFromFile())
         assertEquals(1734, depthMeasurement)
     }
