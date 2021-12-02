@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 
-internal class DiveCommanderTest {
+internal class SimpleDiveCommanderTest {
 
     @Test
     fun takeCommand() {
-        val diveCommander: CommandController = DiveCommander()
+        val diveCommander: CommandController = SimpleDiveCommander()
         diveCommander.takeCommand(Command.FORWARD, 5)
         diveCommander.takeCommand(Command.DOWN, 5)
         diveCommander.takeCommand(Command.FORWARD, 8)

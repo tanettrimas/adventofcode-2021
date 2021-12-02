@@ -1,6 +1,6 @@
 package dag2
 
-class DiveCommander(private var depth: Int = 0, private var horizontal: Int = 0) : CommandController {
+class SimpleDiveCommander(private var depth: Int = 0, private var horizontal: Int = 0) : CommandController {
     override fun takeCommand(command: Command, num: Int) {
         when (command) {
             Command.FORWARD -> horizontal += num
