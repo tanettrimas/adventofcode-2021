@@ -28,7 +28,7 @@ internal class DiveCommanderTest {
             lines.forEach {
                 val splitted = it.split(" ")
                 val command = convertToCommand(splitted[0])
-                val num = splitted[1].toInt()
+                val num = splitted[1].toLong()
                 if (command == null) {
                     throw RuntimeException()
                 }
@@ -60,7 +60,7 @@ internal class DiveCommanderTest {
             lines.forEach {
                 val splitted = it.split(" ")
                 val command = convertToCommand(splitted[0])
-                val num = splitted[1].toInt()
+                val num = splitted[1].toLong()
                 if (command == null) {
                     throw RuntimeException()
                 }

@@ -1,8 +1,8 @@
 package dag2
 
-class AdvancedDiveCommander(private var aim: Int = 0) : SimpleDiveCommander() {
+class AdvancedDiveCommander(private var aim: Long = 0) : SimpleDiveCommander() {
 
-    override fun takeCommand(command: Command, num: Int) {
+    override fun takeCommand(command: Command, num: Long) {
         when (command) {
             Command.FORWARD -> {
                 horizontal += num
